@@ -1,7 +1,7 @@
 # Diamond
-# 2019.11.12 v3.0 实现"截图"功能
-# 2019.11.9 v2.0 实现挑出"比值最大"功能
-# 使用前需修改Excel路径名！！！
+# 2019.11.12 v3.0   "截图"
+# 2019.11.9 v2.0    挑出"比值最大"
+# 使用前需修改'测试结果Excel', '源文件夹', '新文件夹' 三者路径名！！！
 
 import sys
 import shutil
@@ -17,13 +17,13 @@ from snapshot_phantomjs import snapshot
 # 修改路径
 
 # 1.测试结果excel路径
-excel = pd.read_excel(r'C:\Users\yuys\Desktop\合作实验=_=\Diamond\20191031-36\测试结果.xlsx', "比值最大")
+excel = pd.read_excel(r'C:\...', "比值最大")  # 测试结果excel
 
 # 2.全部初始数据文件夹路径
-path_origin = 'C:\\Users\\yuys\\Desktop\\test\\original\\'
+path_origin = 'C:\\...'  # 源文件路径
 
 # 3.筛选后文件夹路径
-path_copy = 'C:\\Users\\yuys\\Desktop\\test\\copyed'
+path_copy = 'C:\\...'  # 筛选后路径
 
 # ===================================
 
